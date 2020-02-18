@@ -1,0 +1,58 @@
+﻿@model ExchangeAPI.Models.ResultInfo
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>View</h2>
+
+<div>
+    <h4>ResultInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.minExchangeRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.minExchangeRate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.minDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.minDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.maxExchangeRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.maxExchangeRate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.maxDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.maxDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.avgRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.avgRate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
